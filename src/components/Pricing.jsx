@@ -1,3 +1,5 @@
+'use client'
+
 import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
@@ -118,7 +120,7 @@ export function Pricing() {
           <Plan
             featured
             name="Richmond to Dulles Airport"
-            price="$149"
+            price="$199"
             description="Premium black car service for up to 4 passengers with luggage."
             href="#book-now"
             features={[

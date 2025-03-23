@@ -30,11 +30,12 @@ const features = [
   {
     title: 'Flat Rate Pricing',
     description:
-      'One simple price: $149 for up to 4 passengers. No hidden fees, no surge pricing, and no surprises. Price includes all tolls and taxes.',
+      'One simple price: $199 for up to 4 passengers. No hidden fees, no surge pricing, and no surprises. Price includes all tolls and taxes.',
     image: '/images/black-car-4.jpg',
   },
 ]
 
+// Make sure there is no duplicate 'export' keyword
 export function PrimaryFeatures() {
   let [tabOrientation, setTabOrientation] = useState('horizontal')
 

@@ -215,7 +215,7 @@ export function BookingForm() {
                     className="w-full"
                     disabled={loading}
                   >
-                    {loading ? 'Processing...' : 'Book Now - $149 Flat Rate'}
+                    {loading ? 'Processing...' : 'Book your ride'}
                   </Button>
                   <p className="mt-4 text-sm text-gray-500 text-center">
                     By booking, you agree to our terms and conditions. We&apos;ll send you a confirmation email immediately after booking.

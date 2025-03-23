@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 
 import { Button } from '@/components/Button'
@@ -27,7 +29,7 @@ export function CallToAction() {
             Book your premium ride from Richmond to Dulles Airport today. Guaranteed on-time arrival, professional service, and a stress-free journey.
           </p>
           <Button href="#book-now" color="white" className="mt-10">
-            Reserve Your Ride - $149
+            Book your ride
           </Button>
         </div>
       </Container>

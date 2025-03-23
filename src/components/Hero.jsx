@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 
 import { Button } from '@/components/Button'
@@ -23,10 +25,10 @@ export function Hero() {
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
         Reliable, comfortable rides in premium vehicles for up to 4 passengers.
-        Flat rate pricing with no hidden fees.
+        Flat rate pricing of $199 with no hidden fees.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="#book-now">Book Your Ride - $149 Flat Rate</Button>
+        <Button href="#book-now">Book your ride</Button>
         <Button
           href="#how-it-works"
           variant="outline"
