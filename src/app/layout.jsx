@@ -5,11 +5,11 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - TaxPal',
-    default: 'TaxPal - Accounting made simple for small businesses',
+    template: '%s - direct2dulles',
+    default: 'direct2dulles - Premium Transportation from Richmond to Dulles Airport',
   },
   description:
-    'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
+    'Reliable, comfortable black car service from Richmond to Dulles Airport. Flat rate pricing with no hidden fees.',
 }
 
 const inter = Inter({
