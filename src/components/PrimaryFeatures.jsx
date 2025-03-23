@@ -7,35 +7,31 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'Reliable Service',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: screenshotPayroll,
+      'On-time pickup guaranteed. We track flights and adjust for delays to ensure you never miss your departure.',
+    image: '/images/black-car-1.jpg', // You'll need to add these images
   },
   {
-    title: 'Claim expenses',
+    title: 'Premium Vehicles',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
-    image: screenshotExpenses,
+      'Travel in style with our fleet of comfortable, clean, and well-maintained luxury vehicles. Spacious seating for up to 4 passengers.',
+    image: '/images/black-car-2.jpg',
   },
   {
-    title: 'VAT handling',
+    title: 'Professional Drivers',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
-    image: screenshotVatReturns,
+      'Our experienced, professionally-trained drivers prioritize your safety and comfort throughout the journey.',
+    image: '/images/black-car-3.jpg',
   },
   {
-    title: 'Reporting',
+    title: 'Flat Rate Pricing',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
-    image: screenshotReporting,
+      'One simple price: $149 for up to 4 passengers. No hidden fees, no surge pricing, and no surprises. Price includes all tolls and taxes.',
+    image: '/images/black-car-4.jpg',
   },
 ]
 
@@ -60,7 +56,7 @@ export function PrimaryFeatures() {
   return (
     <section
       id="features"
-      aria-label="Features for running your books"
+      aria-label="Features for our service"
       className="relative overflow-hidden bg-blue-600 pt-20 pb-28 sm:py-32"
     >
       <Image
@@ -74,11 +70,10 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+            Everything you need for a stress-free journey.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            Our premium car service from Richmond to Dulles Airport is designed to make your travel experience smooth and enjoyable.
           </p>
         </div>
         <TabGroup
@@ -136,13 +131,11 @@ export function PrimaryFeatures() {
                       </p>
                     </div>
                     <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                      <Image
-                        className="w-full"
-                        src={feature.image}
-                        alt=""
-                        priority
-                        sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
-                      />
+                      <div className="w-full h-80 relative">
+                        <div className="absolute inset-0 bg-slate-800/30 flex items-center justify-center">
+                          <p className="text-xl text-white font-semibold">Image of {feature.title}</p>
+                        </div>
+                      </div>
                     </div>
                   </TabPanel>
                 ))}

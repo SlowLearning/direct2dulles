@@ -5,8 +5,9 @@ import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
+import { HowItWorks } from '@/components/HowItWorks'
 import { Testimonials } from '@/components/Testimonials'
+import { BookingForm } from '@/components/BookingForm'
 
 export default function Home() {
   return (
@@ -14,12 +15,12 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        
         <PrimaryFeatures />
-        <SecondaryFeatures />
+        <HowItWorks />
         <CallToAction />
         <Testimonials />
         <Pricing />
+        <BookingForm />
         <Faqs />
       </main>
       <Footer />
