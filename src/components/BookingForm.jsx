@@ -84,7 +84,7 @@ export function BookingForm() {
               Book Your Ride
             </h2>
             <p className="mt-2 text-lg text-slate-600">
-              Reserve your premium transportation from Richmond to Dulles Airport. Complete the form below and we'll confirm your booking right away.
+              Reserve your premium transportation from Richmond to Dulles Airport. Complete the form below and we&apos;ll confirm your booking right away.
             </p>
 
             {!submitted ? (
@@ -218,7 +218,7 @@ export function BookingForm() {
                     {loading ? 'Processing...' : 'Book Now - $149 Flat Rate'}
                   </Button>
                   <p className="mt-4 text-sm text-gray-500 text-center">
-                    By booking, you agree to our terms and conditions. We'll send you a confirmation email immediately after booking.
+                    By booking, you agree to our terms and conditions. We&apos;ll send you a confirmation email immediately after booking.
                   </p>
                 </div>
               </form>
@@ -240,7 +240,7 @@ export function BookingForm() {
                 </svg>
                 <h3 className="mt-4 text-lg font-medium text-green-800">Booking Request Received!</h3>
                 <p className="mt-2 text-green-700">
-                  Thank you for booking with direct2dulles. We've received your request and will send a confirmation email shortly. If you have any questions, please contact us at (804) 662-0327.
+                  Thank you for booking with direct2dulles. We&apos;ve received your request and will send a confirmation email shortly. If you have any questions, please contact us at (804) 662-0327.
                 </p>
                 <Button
                   onClick={() => setSubmitted(false)}
